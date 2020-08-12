@@ -15,3 +15,39 @@ Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 NB! Based on the [blogpost](https://medium.com/better-programming/build-your-own-micro-frontend-ecosystem-a05128c74f99) from Jennifer Fu.
+
+### Concepts
+
+- Each Micro Frontend is represented by a component, eg.
+
+```javascript
+<Route 
+    path="/some/path" 
+	render={(props) => <CreateReactApp {...props}/>} 
+/>
+....
+const CreateReactApp = (props) => {
+  return (
+    <MicroFrontend
+        history={props}
+    ></MicroFrontend>
+  )
+};
+```
+- You can pass any data/function to your Micro Frontends.
+
+```javascript
+import store from './store'; // Redux store that you normally pass to <Provider store={store}>
+const redux_actions = require('./store/actions/app'); // any Redux actions you might have
+....
+const CreateReactApp = (props) => {
+  return (
+    <MicroFrontend
+        history={props}
+		foo="bar"
+		methods={redux_actions}
+		store={store}
+    ></MicroFrontend>
+  )
+};
+```
