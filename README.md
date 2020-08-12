@@ -14,5 +14,4 @@ The app supports bidirectional communitation between the Micro Frontends via Red
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+NB! Based on the [blogpost](https://medium.com/better-programming/build-your-own-micro-frontend-ecosystem-a05128c74f99) from Jennifer Fu.
