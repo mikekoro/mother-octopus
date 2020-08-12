@@ -3,9 +3,11 @@
 This app is a wrapper that allows you to run other instances of Create React App inside (à la Micro Frontends).<br/>
 The app supports bidirectional communitation between the Micro Frontends via Redux.
 
-## Available Scripts
+## Getting started
 
-In the project directory, you can run:
+  - Clone, `npm install` and `npm start` this repository.
+  - Go to [https://github.com/mikekoro/child-octopus1](https://github.com/mikekoro/child-octopus1) and do the same to install and run the first Micro Frontend
+  - Go to [https://github.com/mikekoro/child-octopus2](https://github.com/mikekoro/child-octopus2) and do the same to install and run another Micro Frontend for good measure.
 
 ### `npm start`
 
