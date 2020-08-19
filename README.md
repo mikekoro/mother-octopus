@@ -8,6 +8,10 @@ The app supports bidirectional communitation between the Micro Frontends via Red
   - Clone, `npm install` and `npm start` this repository.
   - Go to [https://github.com/mikekoro/child-octopus1](https://github.com/mikekoro/child-octopus1) and do the same to install and run the first Micro Frontend
   - Go to [https://github.com/mikekoro/child-octopus2](https://github.com/mikekoro/child-octopus2) and do the same to install and run another Micro Frontend for good measure.
+  
+This is the desired structure of your project:
+
+![](https://i.imgur.com/7nyaz8g.png)
 
 ### `npm start`
 
